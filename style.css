@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --azul:#274166;
+    --azul-claro:#4c9ef7;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+
+section{
+    max-width: 1220px;
+    margin: auto;
+    
+}
+header{
+    background-color: var(--azul) ;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 70px;
+    top: 0;
+}
+header h1{
+    font-size: 1.5em;
+}
+header section{
+   
+display: flex;
+align-items: center;
+color: white;
+justify-content: space-between;
+padding: 20px 0px;
+
+}
+.nav-bar a{
+text-decoration: none;
+color: white;
+font-size: 16px;
+margin: 0px 20px;
+
+}
+.nav-bar a:hover{
+    color: var(--azul-claro);
+    font-size: 17px;
+    font-weight: bold;
+}
+.banner{
+    margin-top: 74px;
+background-color: rgb(0, 80, 80);
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 3em;
+height: 400px;
+}
+
+.cursos-container {
+    text-align: center;
+    margin: 40px auto;
+}
+.cursos-container  h2{
+font-size: 2em;
+color: rgb(85, 85, 85);
+border: 1px solid var(--azul-claro);
+border-radius: 100px;
+display: inline-block;
+padding: 10px 10px;
+margin-bottom: 40px;
+}
+.cursos{ 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.cursos > div{
+    background-color:var(--azul);
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1 1 250px; 
+    box-shadow: 3px 3px 19px -10px rgba(0,0,0,0.31);
+}
+.box{
+    cursor: pointer;
+}
+.cursos div:hover{
+    transform: scale(1.02);
+}
+.cursos .imagem img{
+    height: 176px;
+    width: 100%;
+    object-fit: cover;
+
+    }
+.cursos .texto{
+text-align: center;
+color: white;
+padding: 10px;
+}
+.side-bar{
+    height: 100%;
+    width: 500px;
+    position: fixed;
+    background-color: var(--azul-claro);
+    top: 0px;
+    left: 100%;
+    padding: 50px 10px 0px;
+    z-index: 999;
+
+}
+.side-bar div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.side-bar div img{
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 10px;
+   
+    
+    
+}
+.left{
+    left: calc(100% - 500px);
+}
+.cart{
+    cursor: pointer;
+}
+.close{
+    top: 10px;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    position: absolute;
+    cursor: pointer
+    
+}
+.del{
+cursor: pointer;
+}
