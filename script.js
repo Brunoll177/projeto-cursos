@@ -17,7 +17,7 @@ function Carrinho() {
                     console.log("Produto já adicionado")
                 } else {
                     const newDiv = document.createElement("div")
-                    const del = document.createElement("div")
+                    const del = document.createElement("h3")
                     del.innerHTML = "X"
                     del.className = "del"
                     newDiv.innerHTML += `<img src="${img}"><h3>${h3text}</h3>`
